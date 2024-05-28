@@ -1,26 +1,21 @@
-import ContaBancaria from "./contaBancaria";
-
-export default class Pessoa {
-    nome: string;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Pessoa {
     // saldoDaContaBancaria: ContaBancaria;
-
-    constructor(nome: string) {
+    constructor(nome) {
         this.nome = nome;
     }
-
-    public get getNome(): string {
+    get getNome() {
         return this.nome;
-    };
-
+    }
+    ;
     // public get getSaldoDaContaBancaria(): number {
     //     return this.saldoDaContaBancaria.getValor
     // }
-
     //
-
-    public set setNome(nomeDaPessoa: string) {
+    set setNome(nomeDaPessoa) {
         this.nome = nomeDaPessoa;
-    };
-    
+    }
+    ;
 }
-
+exports.default = Pessoa;
